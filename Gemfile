@@ -3,6 +3,10 @@ source "https://rubygems.org"
 
 ruby '2.4.0'
 
+gem 'rake'
+gem 'pry'
+
 group :development, :test do
-  gem ‘rspec’
+  gem 'rspec'
+  gem 'capybara'
 end
