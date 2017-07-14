@@ -33,3 +33,13 @@ class Card
     king: 13,
     ace: 1
   }
+
+  # method to read attributes
+  attr_reader :value
+
+  # card class is initialized with a value paramter and attribute
+  def initialize(value)
+    @value = value
+  end
+
+end 
