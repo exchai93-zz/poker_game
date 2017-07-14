@@ -1,4 +1,4 @@
-require 'PokerGame'
+require 'poker_game'
 
 describe PokerGame do
 
