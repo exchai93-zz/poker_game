@@ -26,4 +26,13 @@ class Deck
      Deck.new(full_deck)
    end
 
+   def deck_count
+     create_deck
+     @full_deck.length
+  end
+
+  def shuffle!
+    @full_deck.shuffle!
+  end
+
 end
