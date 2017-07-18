@@ -50,25 +50,37 @@ I want to input how many players there are
 ```
 ```
 As a player
+So that the deck of cards are randomised
+I want the cards to be shuffled
+```
+```
+As a player
 So that I can start playing poker
 I want each player to be dealt five cards
 ```
 ```
 As a player
 So that a winner can be declared
-I want the score for each hand to be calculated
+I want to calculate the score for each hand
+```
+```
+As a player
+So that the score for each hand is calculated
+I want to sum the face value of each hand
 ```
 ```
 As a player
 So that I know who the winner is
-I want the program to output the winner
+I want the program to output which player has won
 ```
 ```
 As a player
 So that the game can be played correctly
 I want an error when an impossible number of players is inputted (i.e. 0 or 1)
 ```
-<!-- ```
+```
 As a player
-So that the number of cards dealt are configurable
-``` -->
+So that the correct number of cards are dealt
+A maximum of 4 cards for each value should be dealt at a time
+(WIP)
+```
