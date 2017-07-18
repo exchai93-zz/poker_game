@@ -15,4 +15,11 @@ describe Deck do
     end
   end
 
+  describe '#shuffle!' do
+    it 'should shuffle the deck of cards' do
+      deck.shuffle!
+      expect(deck).not_to eq deck_2
+    end
+  end
+  
 end
