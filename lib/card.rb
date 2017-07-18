@@ -6,8 +6,9 @@ class Card
   # method to read attributes
   attr_reader :value
   # card class is initialized with a value parameter and attribute
-  def initialize(value)
+  def initialize(value, suit)
     @value = value
+    @suit = suit
   end
 
 end
