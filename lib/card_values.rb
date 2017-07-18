@@ -1,5 +1,13 @@
 module CardValues
 
+# hash of card suits
+CARD_SUITS = {
+  clubs: "\u2663",
+  diamonds: "\u2662",
+  hearts: "\u2661",
+  spades: "\u2660"
+}
+
 # hash of card values
 CARD_VALUES = {
   deuce: "2",
@@ -17,4 +25,4 @@ CARD_VALUES = {
   ace: "A"
 }
 
-end 
+end
