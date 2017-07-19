@@ -8,7 +8,7 @@ describe Deck do
   let(:card) {Card.new("A", "hearts")}
 
   it 'has a full deck of cards' do
-    expect(deck.deck_count).to eq 52
+    expect(deck.count).to eq 52
   end
 
   describe '#shuffle!' do

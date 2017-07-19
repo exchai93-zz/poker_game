@@ -31,11 +31,20 @@ class Deck
    end
   # A random card from the deck is returned
   def deal_card
-    card = get_random_card_from_deck
-    remove_card_from_deck(card)
+    card = @full_deck.sample
+    @full_deck.delete(card)
   end
 
-  def deck_count
+  def deal_five_cards
+    # 5 cards from the deck are returned in an array
+    cards = @full_deck.sample(5)
+    @full_deck.delete_at(cards)
+
+    # @full_deck.delete_if {|card| card }
+    # @full_deck.reject! {|card|}
+  end
+
+  def count
     @full_deck.length
   end
 
@@ -47,6 +56,10 @@ class Deck
 
   def remove_card_from_deck(card)
     @full_deck.delete(card)
+  end
+
+  def remove_cards_from_deck(cards)
+    @full_deck.delete(cards)
   end
 
 end
