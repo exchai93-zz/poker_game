@@ -84,3 +84,43 @@ So that the correct number of cards are dealt
 A maximum of 4 cards for each value should be dealt at a time
 (WIP)
 ```
+
+## Bonus features User Stories
+```
+As a player
+So that the user interface can be interactive
+I want to input variables and have each player's hand and value displayed
+```
+```
+As a player
+So that I can view my hand in order after dealing
+I want it to be sorted using card suit followed by value
+```
+```
+As a player
+So that bonus points can be given for each pair
+I want to score 10 points
+```
+```
+As a player
+So that bonus points can be given for each three of a kind
+I want to score 20 points
+```
+```
+As a player
+So that bonus points can be given for each straight
+I want to score 40 points
+```
+```
+As a player
+So that a winner can be determined in a tie-breaker
+I want to use Hearts suit
+(WIP)
+```
+
+(Each card can only be used once per combination)
+<!--
+* HTML user interface to input variables and display each player’s hand and value.
+* Sort each player’s hand after dealing, using card suit followed by value. (Descending suit order is Hearts, Spades, Diamonds, Clubs).
+* Enhance the scoring system by giving a bonus of 10 points for each pair, 20 points for each three of a kind, 40 points for a straight. (Each card can only be used once per combination).
+* Tie-breaker: use card suit to determine an overall winner. -->
