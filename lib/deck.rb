@@ -39,6 +39,8 @@ class Deck
     @full_deck.length
   end
 
+  private
+  
   def get_random_card_from_deck
     @full_deck.sample
   end
