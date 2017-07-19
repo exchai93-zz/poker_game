@@ -3,19 +3,12 @@ require 'card'
 
 describe Deck do
 
-  subject(:deck) {described_class.new}
-  let(:deck_2) {described_class.new}
+  subject(:deck) {described_class.create_deck}
+  let(:deck_2) {described_class.create_deck}
   let(:card) {Card.new("A", "hearts")}
 
-  it 'initializes with an empty array' do
-    expect(deck.full_deck).to eq []
-  end
-
-  describe '#create_deck' do
-    it 'should have 52 cards in a full deck' do
-      deck.create_deck
-      expect(deck.deck_count).to eq 52
-    end
+  it 'has a full deck of cards' do
+    expect(deck.deck_count).to eq 52
   end
 
   describe '#shuffle!' do
@@ -27,7 +20,6 @@ describe Deck do
 
   describe '#deal_card' do
     before do
-      deck.create_deck
       deck.shuffle!
     end
     it 'should return one random card' do
