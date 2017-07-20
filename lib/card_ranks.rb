@@ -1,5 +1,4 @@
 module CardRanks
-
   # hash of rank of each card
   CARD_RANK = {
     deuce: 2,
@@ -16,6 +15,5 @@ module CardRanks
     king: 13,
     ace: 1
   }
-
 
 end
