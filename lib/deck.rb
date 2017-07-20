@@ -13,7 +13,8 @@ class Deck
     # Iterate over each suit and value then push them to the full_deck array
     suits.each do |suit|
       values.each do |value|
-        full_deck << Card.new(value, suit)
+        card = [suit, value]
+        full_deck << card
       end
     end
       Deck.new(full_deck)
@@ -29,37 +30,18 @@ class Deck
    def shuffle!
      @full_deck.shuffle!
    end
-  # A random card from the deck is returned
+  # A random card from the deck is returned and removed from the array
   def deal_card
-    card = @full_deck.sample
-    @full_deck.delete(card)
+    @full_deck.pop
   end
 
   def deal_five_cards
     # 5 cards from the deck are returned in an array
-    cards = @full_deck.sample(5)
-    @full_deck.delete_at(cards)
-
-    # @full_deck.delete_if {|card| card }
-    # @full_deck.reject! {|card|}
+    # cards = @full_deck.sample(5)
   end
 
   def count
     @full_deck.length
-  end
-
-  private
-
-  def get_random_card_from_deck
-    @full_deck.sample
-  end
-
-  def remove_card_from_deck(card)
-    @full_deck.delete(card)
-  end
-
-  def remove_cards_from_deck(cards)
-    @full_deck.delete(cards)
   end
 
 end
