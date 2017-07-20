@@ -25,10 +25,6 @@ class Player
 
   private
 
-  attr_writer :player_number 
+  attr_writer :player_number
 
 end
-
-player = Player.new
-
-player.get_player_number
