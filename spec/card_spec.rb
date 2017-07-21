@@ -13,6 +13,10 @@ describe Card do
     end
   end
 
-
+  describe '#to_s' do
+    it 'converts the card value and suit into a single string' do
+      expect(card.to_s).to eq "A, \u2663"
+    end
+  end
 
 end

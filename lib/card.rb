@@ -1,5 +1,5 @@
 require_relative 'card_values'
-
+# Responsibility: Make a single card
 class Card
   # require CardValues module
   include CardValues
@@ -11,4 +11,7 @@ class Card
     @suit = suit
   end
 
+  def to_s
+    "#{@value}, #{@suit}"
+  end
 end
