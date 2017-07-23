@@ -1,19 +1,19 @@
 require_relative 'card'
-# Responsibility: Full deck can be shuffled
+# Responsibility: Creates a full deck
 class Deck
   # Retrieve CardValues module
-  include CardValues
+  include CardProperties
   # Class method which instantiates a full deck of cards
   def self.create_deck
     full_deck = []
-    # From the CARD_SUITS hash, retrieve the keys
-    # From the CARD_VALUES hash, retrieve the values
+    # From the CARD_SUITS hash, retrieve the card symbols
     suits = CARD_SUITS.keys
-    values = CARD_VALUES.values
+    # Create an array of card values strings
+    values = %W(A 2 3 4 5 6 7 8 9 10 J Q K)
     # Iterate over each suit and value then push them to the full_deck array
     suits.each do |suit|
       values.each do |value|
-        card = [suit, value]
+        card = [value, suit]
         full_deck << card
       end
     end
