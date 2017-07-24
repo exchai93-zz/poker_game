@@ -14,4 +14,8 @@ class Card
     "#{@value} #{CARD_SUITS[@suit]}"
   end
 
+  def get_face_value
+    FACE_VALUES[@value]
+  end
+
 end
