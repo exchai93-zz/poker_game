@@ -13,6 +13,14 @@ class Hand
     @hand_value = hand_value
   end
 
+  def get_hand_value
+  values = []
+  @cards.to_h.keys.each do |card|
+    values << Hand::FACE_VALUES[card]
+  end
+  values.sum
+end
+
   def hand_is_full?
    @cards.length == NUM_OF_CARDS_IN_HAND
  end
