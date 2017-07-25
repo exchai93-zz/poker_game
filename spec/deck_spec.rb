@@ -6,7 +6,7 @@ describe Deck do
   subject(:deck) {described_class.create_deck}
   let(:deck_1) {described_class.create_deck}
   let(:deck_2) {described_class.create_deck}
-  let(:card) { Card.new("Q", "hearts") }
+  let(:card) {Card.new}
 
   it 'has a full deck of cards' do
     expect(deck.count).to eq 52
