@@ -13,4 +13,8 @@ class Hand
     @hand_value = hand_value
   end
 
+  def hand_is_full?
+   @cards.length == NUM_OF_CARDS_IN_HAND
+ end
+
 end
