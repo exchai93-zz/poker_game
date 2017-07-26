@@ -16,7 +16,6 @@ class PokerGame
   end
 
   def play
-    set_player_number
     create_players
     deal_cards
     get_winner
@@ -36,7 +35,7 @@ private
 
   # Create number of players according to user input
   def create_players
-    for player_number in  1..set_player_number
+    for player_number in 1..set_player_number
       @players << Player.new(Hand.new, 0, player_number)
     end
   end
@@ -47,7 +46,6 @@ private
       @players.each do |player|
         player.hand.draw(@dealer.deal)
       end
-      puts "Player #{player.player_number} cards in hand:#{player.hand.display_cards_in_hand}"
     end
   end
 
@@ -55,12 +53,12 @@ private
   def get_winner
     scores = []
     @players.each do |player|
+      puts "Player #{player.player_number} cards in hand: #{player.hand.display_cards_in_hand}"
       puts "Player #{player.player_number} score: #{player.hand.get_hand_value}"
       scores << [player.player_number, player.hand.get_hand_value]
     end
     score_board = scores.sort {|a,b| a[1] <=> b[1]}.reverse!
-    puts "The winner is player #{score_board[0][0]}. Score: #{score_board[0][1]}"
-    end
+    puts "The winner is player #{score_board[0][0]}! Score: #{score_board[0][1]}"
   end
 
 end
