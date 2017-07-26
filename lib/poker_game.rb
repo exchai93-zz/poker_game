@@ -6,6 +6,9 @@ class PokerGame
 
   attr_reader :players, :deck, :dealer
 
+  MIN_NUM_PLAYERS = 2
+  MAX_NUM_PLAYERS = 5
+
   def initialize
     @players = []
     @deck = Deck.create_deck
@@ -23,7 +26,7 @@ private
   # Get user input for how many players
   def set_player_number
     number_players = 0
-    until number_players >= 2 && number_players <= 5
+    until number_players >= MIN_NUM_PLAYERS && number_players <= MAX_NUM_PLAYERS
       puts "How many players are there? Choose between 2, 3, 4 and 5."
       number_players = gets.chomp.to_i
       puts "Ok let's play.\nDealing five cards to #{number_players} players..."
