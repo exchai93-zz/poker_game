@@ -33,6 +33,13 @@ class PokerGame
       puts "Player #{player.player_number} cards in hand:#{player.hand.display_cards_in_hand}"
     end
 
+    # Show scores
+    scores = []
+    @players.each do |player|
+      puts "Player #{player.player_number} score: #{player.hand.get_hand_value}"
+      scores << [player.player_number, player.hand.get_hand_value]
+    end
+
 
 end
 # run game: ruby poker_game.rb
