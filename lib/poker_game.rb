@@ -25,6 +25,14 @@ class PokerGame
       @players << Player.new(Hand.new, 0, player_number)
     end
 
+    # Deal 5 cards to each player
+    5.times do
+      @players.each do |player|
+        player.hand.draw(@dealer.deal)
+      end
+      puts "Player #{player.player_number} cards in hand:#{player.hand.display_cards_in_hand}"
+    end
+
 
 end
 # run game: ruby poker_game.rb
