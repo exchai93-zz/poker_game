@@ -39,6 +39,10 @@ class PokerGame
       puts "Player #{player.player_number} score: #{player.hand.get_hand_value}"
       scores << [player.player_number, player.hand.get_hand_value]
     end
+    # Calculate winner
+    score_board = scores.sort {|a,b| a[1] <=> b[1]}.reverse!
+    puts "The winner is player #{score_board[0][0]}. Score: #{score_board[0][1]}"
+    end
 
 
 end
