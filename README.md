@@ -30,10 +30,14 @@ $ bundle update
 $ ruby './lib/poker_game.rb'
 ```
 
+## Program should output like this
+
+![poker game](/public/images/poker_game_output.png)
+
 ## Technologies
 
 - Ruby v2.4.0
-- RSpec v3.6.0
+- RSpec v3.6.0 (Testing framework)
 
 ## Approach
 
@@ -41,6 +45,7 @@ $ ruby './lib/poker_game.rb'
 
 - **Test Driven Development:**
 
+![rspec screenshot](/public/images/rspec_test_results.png)
 
 - **Refactoring:**
 
@@ -78,14 +83,12 @@ I want the program to output which player has won
 ```
 As a player
 So that the game can be played correctly
-I want an error when an impossible number of players is inputted (i.e. 0 or 1)
+I want the game to start only when a valid number of players is inputted (2 - 5)
 ```
-```
-As a player
-So that the correct number of cards are dealt
-A maximum of 4 cards for each value should be dealt at a time
-(WIP)
-```
+
+## Future improvements
+
+If I had more time, I would have focused on adding more features according to the bonus features user stories below.
 
 ## Bonus features User Stories
 ```
@@ -117,12 +120,4 @@ I want to score 40 points
 As a player
 So that a winner can be determined in a tie-breaker
 I want to use Hearts suit
-(WIP)
 ```
-
-(Each card can only be used once per combination)
-<!--
-* HTML user interface to input variables and display each player’s hand and value.
-* Sort each player’s hand after dealing, using card suit followed by value. (Descending suit order is Hearts, Spades, Diamonds, Clubs).
-* Enhance the scoring system by giving a bonus of 10 points for each pair, 20 points for each three of a kind, 40 points for a straight. (Each card can only be used once per combination).
-* Tie-breaker: use card suit to determine an overall winner. -->
