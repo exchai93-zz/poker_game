@@ -27,6 +27,7 @@ $ bundle update
 
 - **Run application**
 ```
+$ ruby './lib/poker_game.rb'
 ```
 
 ## Technologies
@@ -39,6 +40,7 @@ $ bundle update
 - **Planning:** Focusing on agile and Object Orientated Design, I broke down the specification into smaller issues to write [user stories](#User Stories). Domain modelling enabled me to identify 'noun' and 'verb' relationships. Diagramming aided in visualising my thought process.
 
 - **Test Driven Development:**
+
 
 - **Refactoring:**
 
