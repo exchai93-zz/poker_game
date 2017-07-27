@@ -41,13 +41,16 @@ $ ruby './lib/poker_game.rb'
 
 ## Approach
 
-- **Planning:** Focusing on agile and Object Orientated Design, I broke down the specification into smaller issues to write [user stories](#User Stories). Domain modelling enabled me to identify 'noun' and 'verb' relationships. Diagramming aided in visualising my thought process.
+- **Planning:** Focusing on agile and Object Orientated Design, I broke down the specification into smaller issues to write user stories. Domain modelling enabled me to identify 'noun' and 'verb' relationships. Diagramming aided in visualising my thought process.
 
 - **Test Driven Development:**
+TDD ensured I made logical design decisions and allowed me to identify bugs to be solved quickly. I was not able to test for everything i.e. PokerGame#play however this is something I would like to add to be worked on in the future. 
 
+All tests pass!
 ![rspec screenshot](/public/images/rspec_test_results.png)
 
 - **Refactoring:**
+Refactoring as I went along to ensure that my code was as clean as possible. There are still a couple things I would like to work on such as SRP with the classes and methods.
 
 ## MVP User Stories
 ```
