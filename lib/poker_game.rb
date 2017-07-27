@@ -26,7 +26,7 @@ private
   def set_player_number
     number_players = 0
     until number_players >= MIN_NUM_PLAYERS && number_players <= MAX_NUM_PLAYERS
-      puts "How many players are there? Choose between 2, 3, 4 and 5."
+      puts "Hello. \nHow many players are there? Choose between 2, 3, 4 and 5."
       number_players = gets.chomp.to_i
       puts "Ok let's play.\nDealing five cards to #{number_players} players..."
     end
@@ -58,10 +58,11 @@ private
       scores << [player.player_number, player.hand.get_hand_value]
     end
     score_board = scores.sort {|a,b| a[1] <=> b[1]}.reverse!
-    puts "The winner is player #{score_board[0][0]}! Score: #{score_board[0][1]}"
+    puts "The highest score is #{score_board[0][1]}."
+    puts "The winner is player #{score_board[0][0]}!"
   end
 
 end
-# run game: ruby poker_game.rb
+# run game from the command line: 'ruby poker_game.rb'
 game = PokerGame.new
 game.play
