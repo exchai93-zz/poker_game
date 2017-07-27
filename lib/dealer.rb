@@ -1,9 +1,9 @@
 require_relative 'deck'
-# Responsibility: deals cards
+
 class Dealer
 
   attr_reader :deck
-  # Dealer class is initialized with a full deck 
+  # Dealer class is initialized with a full deck
   def initialize(deck = Deck.create_deck)
     @deck = deck
   end

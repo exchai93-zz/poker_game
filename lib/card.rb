@@ -1,5 +1,5 @@
 require_relative 'card_properties'
-# Responsibility: Make a single card
+
 class Card
   include CardProperties
   # Method to read attributes
@@ -13,7 +13,7 @@ class Card
   def to_s
     "#{@value} #{CARD_SUITS[@suit]}"
   end
-
+  # Retrieves the values from the FACE_VALUES hash
   def get_face_value
     FACE_VALUES[@value]
   end

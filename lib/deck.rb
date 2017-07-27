@@ -1,5 +1,5 @@
 require_relative 'card'
-# Responsibility: Creates a full deck
+
 class Deck
   # Retrieve CardValues module
   include CardProperties

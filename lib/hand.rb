@@ -6,7 +6,6 @@ class Hand
   attr_reader :hand_value
   attr_accessor :cards
 
-  # Magic number setting the maxmimum number of cards in hand
   NUM_OF_CARDS_IN_HAND = 5
 
   def initialize
@@ -33,7 +32,7 @@ class Hand
   def hand_is_full?
    @cards.length == NUM_OF_CARDS_IN_HAND
   end
-  # Shows the cards in a string format 
+  # Shows the cards in a string format
   def display_cards_in_hand
     @cards.collect do |card|
       card.join
