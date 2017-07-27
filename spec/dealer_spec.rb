@@ -8,7 +8,7 @@ describe Dealer do
   subject(:dealer) { described_class.new }
 
   describe '#initialize' do
-    it 'has an array of full deck' do
+    it 'initializes with Deck objects' do
       expect(dealer.deck.class).to eq Deck
     end
   end
