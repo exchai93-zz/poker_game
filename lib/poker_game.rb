@@ -43,11 +43,10 @@ private
   # Deal 5 cards to each player
   def deal_cards
     5.times do
-      @players.each do |player|
-        player.hand.draw(@dealer.deal)
-      end
+      @players.each { |player| player.hand.draw(@dealer.deal) }
     end
   end
+
 
   # Show scores and calculate winner
   def get_winner
