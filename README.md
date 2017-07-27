@@ -46,9 +46,10 @@ $ ruby './lib/poker_game.rb'
 - **Test Driven Development:**
 TDD ensured I made logical design decisions and allowed me to identify bugs to be solved quickly. I was not able to test for everything i.e. PokerGame#play however this is something I would like to be worked on in the future.
 
-All tests pass! >>>
+All tests pass!
+<p>
 ![rspec screenshot](/public/images/rspec_test_results.png)
-
+</p>
 - **Refactoring:**
 Refactoring as I went along to ensure that my code was as clean as possible. There are still a couple things I would like to work on such as SRP with the classes and methods.
 
