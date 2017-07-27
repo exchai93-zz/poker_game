@@ -3,7 +3,6 @@ require 'deck'
 
 describe Dealer do
 
-  let(:card) { ["A", :S] }
   let(:deck) { double(Deck.create_deck) }
   subject(:dealer) { described_class.new }
 

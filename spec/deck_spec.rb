@@ -3,13 +3,15 @@ require 'card'
 
 describe Deck do
 
-  subject(:deck) {described_class.create_deck}
-  let(:deck_1) {described_class.create_deck}
-  let(:deck_2) {described_class.create_deck}
-  let(:card) {Card.new}
+  subject(:deck) { described_class.create_deck }
+  let(:deck_1) { described_class.create_deck }
+  let(:deck_2) { described_class.create_deck }
+  let(:card) { Card.new }
 
-  it 'has a full deck of cards' do
-    expect(deck.count).to eq 52
+  describe '#initialize' do
+    it 'has a full deck of cards' do
+      expect(deck.count).to eq 52
+    end
   end
 
   describe '#shuffle' do

@@ -2,7 +2,7 @@ require 'card'
 
 describe Card do
 
-  subject(:card) {described_class.new("A", :S)}
+  subject(:card) { described_class.new("A", :S) }
 
   describe '#initialize' do
     it 'initializes card with a value' do

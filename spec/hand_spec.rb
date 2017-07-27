@@ -1,5 +1,4 @@
 require 'hand'
-require 'pry'
 
 describe Hand do
 
